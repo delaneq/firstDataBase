@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <a href="/" class="btn btn-secondary"> < Домой</a>
+        <h2 class="mb-5">Создать задачу</h2>
+
+        <form action="/new" method="post">
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">Название задачи</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название задачи" name="title">
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlTextarea1" class="form-label">Описание задачи</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-success">Создать</button>
+        </form>
+    </div>
+</body>
+</html>
